@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Register</title>
-</head>
+  <head>
+    <meta charset="utf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scae=1">
+    <title>Evently</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
 <body>
 
-<h2>Register</h2>
+  <header class="header-bar">
+    <img src="images/evently.jpg.png" alt="Evently Logo" class="logo">
+</header>
+
+
 
 <form action="register.php" method="POST">
   <input type="text" name="username" placeholder="Username" required><br><br>
   <input type="email" name="email" placeholder="Email" required><br><br>
   <input type="password" name="password" placeholder="Password" required><br><br>
 
-  <select name="role">
+  <select name="role" style="width: 170px;">
     <option value="user">User</option>
     <option value="organizer">Organizer</option>
   </select><br><br>
 
-  <button type="submit">Register</button>
+  <button type="submit">Sign up</button>
+
+  <p>Already have an account? <a href="login.html">Login</a></p>
 </form>
 
 </body>

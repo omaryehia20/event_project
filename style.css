@@ -9,7 +9,7 @@ h2 {
 }
 
 form {
-  background: white;
+  background: goldenrod;
   padding: 20px;
   margin: 20px auto;
   width: 300px;
@@ -24,14 +24,14 @@ input, select, textarea {
 
 button {
   padding: 10px 20px;
-  background: #007BFF;
+  background: black;
   color: white;
   border: none;
   border-radius: 5px;
 }
 
 button:hover {
-  background: #0056b3;
+  background: #404040;
 }
 
 .card {
@@ -56,14 +56,14 @@ a {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  background: #007BFF;
+  background: black;
   color: white;
   text-decoration: none;
   border-radius: 5px;
 }
 
 a:hover {
-  background: white;
+  background: #404040;
 }
 
 .delete-btn {
@@ -95,7 +95,7 @@ a:hover {
 }
 
 .navbar {
-  background: #333;
+  background: goldenrod;
   padding: 10px;
 }
 
@@ -107,20 +107,35 @@ a:hover {
 
 body {
   font-family: Arial;
-  background-image: url("images/bg.jpg.png");
-  background-size: cover;
+  background-image: url("images/eventPic.jpg.jpeg");
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  margin: 0%;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: -1;
+
+.header-bar {
+    width: 100%;            
+    height: 150px;           
+    display: flex;          
+    justify-content: center; 
+    align-items: center;    
+
+    background-color: goldenrod;
+    background-size: cover;
+    background-position: center;
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+
+.logo {
+    height: 80px;            
+    width: auto;   
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)) 
+            drop-shadow(0 0 15px rgba(255, 255, 255, 0.4));                 
+}
+
+
+
