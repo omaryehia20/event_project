@@ -12,8 +12,17 @@ if ($user && password_verify($password, $user['password'])) {
     $_SESSION['user_id'] = $user['id'];
     $_SESSION['role'] = $user['role'];
 
-    header("Location: dashboard.php");
+     header("Location: dashboard.php");
+
+    // if ($user['role'] == 'user') {
+    //     header("Location: dashboard.php");
+    // } else {
+    //     header("Location: dashboard.php");
+    // }
+
 } else {
-    echo "Invalid email or password";
+
+    header("Location: login.html?error=1");
+    exit();
 }
 ?>
