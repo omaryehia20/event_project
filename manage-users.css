@@ -1,0 +1,181 @@
+.manage-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.manage-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.manage-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 10px 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.5px;
+}
+
+.manage-subtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-weight: 300;
+}
+
+.success-message {
+  background: rgba(27, 148, 78, 0.2);
+  border: 1px solid #1b944e;
+  color: #1b944e;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.users-table-wrapper {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table thead {
+  background: linear-gradient(135deg, #0358b4 0%, #025fa3 100%);
+}
+
+.users-table th {
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.users-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: 14px;
+}
+
+.users-table tbody tr:hover {
+  background: rgba(3, 88, 180, 0.05);
+}
+
+.users-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.role-user {
+  background: rgba(3, 88, 180, 0.2);
+  color: #0358b4;
+}
+
+.role-organizer {
+  background: rgba(155, 89, 182, 0.2);
+  color: #9b59b6;
+}
+
+.delete-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #c62828 0%, #b71c1c 100%);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #b71c1c 0%, #ad1457 100%);
+  transform: scale(1.05);
+}
+
+.no-users {
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.no-users-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.no-users-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 15px 0;
+}
+
+.no-users-text {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.back-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #666 0%, #555 100%);
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #555 0%, #444 100%);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .users-table {
+    font-size: 12px;
+  }
+
+  .users-table th, .users-table td {
+    padding: 12px 10px;
+  }
+
+  .delete-btn {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+}
