@@ -7,6 +7,7 @@ if ($_SESSION['role'] != 'user') {
 }
 
 $result = $conn->query("SELECT * FROM events WHERE status='approved'");
+$events = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -27,24 +28,16 @@ $result = $conn->query("SELECT * FROM events WHERE status='approved'");
 
 <h2>Available Events</h2>
 
-<?php while ($row = $result->fetch_assoc()) { ?>
-    
-    <div class="card">
+<div id="events-root"></div>
 
-        <img src="images/<?php echo $row['image']; ?>" class="event-img">
-        <h3 style="color: white;"><?php echo $row['title']; ?></h3>
-        <p style="color: white;"><?php echo $row['description']; ?></p>
-        <p style="color: white;"><b>Location:</b> <?php echo $row['location']; ?></p>
-        <p style="color: white;"><b>Date:</b> <?php echo $row['date']; ?></p>
-        <p class="price">$<?php echo $row['price']; ?></p>
+<script>
+  window.EVENTLY_EVENTS = <?php echo json_encode($events, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
+</script>
 
-        <div class="buy-container">
-          <a href="checkout.php?event_id=<?php echo $row['id']; ?>" class="buy-btn">Buy Ticket</a>
-        </div>
-        
-    </div>
-
-<?php } ?>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel" src="events-react.js"></script>
 
 <footer>
   <div class="footer-container">

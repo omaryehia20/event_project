@@ -175,3 +175,97 @@ footer {
     justify-content: center;
   }
 }
+
+.evently-app {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  padding: 0 20px 40px;
+}
+
+.evently-filter-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.56);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.evently-search-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  flex: 1;
+}
+
+.evently-search,
+.evently-select,
+.evently-date {
+  min-width: 220px;
+  max-width: 320px;
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.72);
+  color: #ffffff;
+  font-size: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.evently-search::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.evently-select {
+  position: relative;
+  z-index: 10;
+  background-image: linear-gradient(45deg, rgba(255,255,255,0.8) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 75%, transparent 75%, transparent);
+  background-size: 12px 12px;
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+}
+
+.evently-search:focus,
+.evently-select:focus,
+.evently-date:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.evently-select option {
+  background: #222;
+  color: #fff;
+}
+
+  .event-empty {
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+@media (max-width: 900px) {
+  .evently-filter-panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .evently-search-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
