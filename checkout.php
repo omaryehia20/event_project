@@ -79,7 +79,7 @@ $user = $user_result->fetch_assoc();
     <div class="total-section">
       <div class="total-row">
         <span>Total Amount</span>
-        <span class="total-price">$<?php echo $event['price']; ?></span>
+        <span class="total-price"><?php echo $event['price']; ?> EGP</span>
       </div>
     </div>
 

@@ -234,7 +234,7 @@ unset($_SESSION['success_payment_method']);
       </div>
       <div class="detail-item">
         <span class="detail-label">Amount Paid</span>
-        <span class="detail-value">$<?php echo $event['price']; ?></span>
+        <span class="detail-value"><?php echo $event['price']; ?> EGP</span>
       </div>
       <div class="detail-item">
         <span class="detail-label">Payment Method</span>

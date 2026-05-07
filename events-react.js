@@ -18,7 +18,7 @@ function EventCard({ event }) {
       <p style={{ color: 'white' }}>{event.description}</p>
       <p style={{ color: 'white' }}><strong>Location:</strong> {event.location}</p>
       <p style={{ color: 'white' }}><strong>Date:</strong> {formatEventDate(event.date)}</p>
-      <p className="price">${event.price}</p>
+      <p className="price">{event.price} EGP</p>
       <div className="buy-container">
         <a href={`checkout.php?event_id=${event.id}`} className="buy-btn">Buy Ticket</a>
       </div>

@@ -274,7 +274,7 @@ else {
           </div>
           <div class="detail">
             <span class="detail-label">💲 Price</span>
-            <span class="detail-value">$<?php echo $row['price']; ?></span>
+            <span class="detail-value"><?php echo $row['price']; ?> EGP</span>
           </div>
           <div class="detail">
             <span class="detail-label">✓ Status</span>

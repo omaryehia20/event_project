@@ -227,7 +227,7 @@ unset($_SESSION['return_amount']);
       </div>
       <div class="detail-item">
         <span class="detail-label">Original Price</span>
-        <span class="detail-value">$<?php echo $refund_amount; ?></span>
+        <span class="detail-value"><?php echo $refund_amount; ?> EGP</span>
       </div>
       <div class="detail-item">
         <span class="detail-label">Return Date</span>
@@ -237,7 +237,7 @@ unset($_SESSION['return_amount']);
 
     <div class="refund-info">
       <div class="refund-label">Refund Amount</div>
-      <div class="refund-amount">$<?php echo $refund_amount; ?></div>
+      <div class="refund-amount"><?php echo $refund_amount; ?> EGP</div>
     </div>
 
     <div class="action-buttons">

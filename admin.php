@@ -42,7 +42,7 @@ $result = $conn->query("SELECT * FROM events WHERE status='pending'");
           <div class="event-details">
             <p class="event-detail"><strong>Date:</strong> <?php echo htmlspecialchars($row['date']); ?></p>
             <p class="event-detail"><strong>Location:</strong> <?php echo htmlspecialchars($row['location']); ?></p>
-            <p class="event-detail"><strong>Price:</strong> $<?php echo htmlspecialchars($row['price']); ?></p>
+            <p class="event-detail"><strong>Price:</strong> <?php echo htmlspecialchars($row['price']); ?> EGP</p>
             <p class="event-detail"><strong>Organizer ID:</strong> <?php echo htmlspecialchars($row['created_by']); ?></p>
           </div>
 
