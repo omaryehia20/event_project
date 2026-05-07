@@ -26,13 +26,13 @@ $user_id = $_SESSION['user_id'];
 <body>
 
 <header class="header-bar">
-    <img src="images/logofinal.png" alt="Evently Logo" class="logo">
+    <img style="width: 370px; height: 160px;" src="images/eventlyLogo.png" alt="Evently Logo" class="logo">
 </header>
 
 <div class="dashboard-container">
   <div class="dashboard-header">
-    <h1 class="welcome-title">Welcome back, <?php echo ucfirst($role); ?>!</h1>
-    <p class="welcome-subtitle">Manage your events and activities</p>
+    <h1 class="welcome-title" style="color: white;">Welcome back, <?php echo ucfirst($role); ?>!</h1>
+    <p class="welcome-subtitle" style="color: white;">Manage your events and activities</p>
   </div>
 
   <?php if ($role == 'admin') { ?>
@@ -47,19 +47,19 @@ $user_id = $_SESSION['user_id'];
         ?>
         <div class="stat-item">
           <div class="stat-number"><?php echo $pending_count; ?></div>
-          <div class="stat-label">Pending Events</div>
+          <div class="stat-label" style="color: white;">Pending Events</div>
         </div>
         <div class="stat-item">
           <div class="stat-number"><?php echo $approved_count; ?></div>
-          <div class="stat-label">Approved Events</div>
+          <div class="stat-label" style="color: white;">Approved Events</div>
         </div>
         <div class="stat-item">
           <div class="stat-number"><?php echo $total_events; ?></div>
-          <div class="stat-label">Total Events</div>
+          <div class="stat-label" style="color: white;">Total Events</div>
         </div>
         <div class="stat-item">
           <div class="stat-number"><?php echo $total_users; ?></div>
-          <div class="stat-label">Registered Users</div>
+          <div class="stat-label" style="color: white;">Registered Users</div>
         </div>
       </div>
     </div>
@@ -68,20 +68,20 @@ $user_id = $_SESSION['user_id'];
     <div class="admin-actions-grid">
       <div class="dashboard-card">
         <span class="card-icon">📋</span>
-        <h3 class="card-title">Review Events</h3>
-        <p class="card-description">Approve or reject pending event submissions from organizers.</p>
+        <h3 class="card-title" style="color: white;">Review Events</h3>
+        <p class="card-description" style="color: #cccccc;">Approve or reject pending event submissions from organizers.</p>
         <a href="admin.php" class="card-button btn-warning">Admin Panel</a>
       </div>
       <div class="dashboard-card">
         <span class="card-icon">👥</span>
-        <h3 class="card-title">Manage Users</h3>
-        <p class="card-description">View and delete user accounts and organizers.</p>
+        <h3 class="card-title" style="color: white;">Manage Users</h3>
+        <p class="card-description" style="color: #cccccc;">View and delete user accounts and organizers.</p>
         <a href="manage_users.php" class="card-button btn-primary">User Management</a>
       </div>
       <div class="dashboard-card">
         <span class="card-icon">🚪</span>
-        <h3 class="card-title">Logout</h3>
-        <p class="card-description">Sign out of your account securely.</p>
+        <h3 class="card-title" style="color: white;">Logout</h3>
+        <p class="card-description" style="color: #cccccc;">Sign out of your account securely.</p>
         <a href="logout.php" class="card-button btn-danger">Logout</a>
       </div>
     </div>
@@ -98,19 +98,19 @@ $user_id = $_SESSION['user_id'];
         ?>
         <div class="stat-item">
           <div class="stat-number"><?php echo $my_events; ?></div>
-          <div class="stat-label">My Events</div>
+          <div class="stat-label" style="color: white;">My Events</div>
         </div>
         <div class="stat-item">
           <div class="stat-number"><?php echo $approved_events; ?></div>
-          <div class="stat-label">Approved</div>
+          <div class="stat-label" style="color: white;">Approved</div>
         </div>
         <div class="stat-item">
           <div class="stat-number"><?php echo $pending_events; ?></div>
-          <div class="stat-label">Pending</div>
+          <div class="stat-label" style="color: white;">Pending</div>
         </div>
         <div class="stat-item">
           <div class="stat-number"><?php echo $total_tickets; ?></div>
-          <div class="stat-label">Tickets Sold</div>
+          <div class="stat-label" style="color: white;">Tickets Sold</div>
         </div>
       </div>
     </div>
@@ -119,20 +119,20 @@ $user_id = $_SESSION['user_id'];
     <div class="admin-actions-grid">
       <div class="dashboard-card">
         <span class="card-icon">➕</span>
-        <h3 class="card-title">Create Event</h3>
-        <p class="card-description">Add a new event to the platform for approval.</p>
+        <h3 class="card-title" style="color: white;">Create Event</h3>
+        <p class="card-description" style="color: #cccccc;">Add a new event to the platform for approval.</p>
         <a href="create_event.html" class="card-button btn-success">Create Event</a>
       </div>
       <div class="dashboard-card">
         <span class="card-icon">📅</span>
-        <h3 class="card-title">My Events</h3>
-        <p class="card-description">View and manage all your created events.</p>
+        <h3 class="card-title" style="color: white;">My Events</h3>
+        <p class="card-description" style="color: #cccccc;">View and manage all your created events.</p>
         <a href="my_events.php" class="card-button btn-primary">View Events</a>
       </div>
       <div class="dashboard-card">
         <span class="card-icon">🚪</span>
-        <h3 class="card-title">Logout</h3>
-        <p class="card-description">Sign out of your account securely.</p>
+        <h3 class="card-title" style="color: white;">Logout</h3>
+        <p class="card-description" style="color: #cccccc;">Sign out of your account securely.</p>
         <a href="logout.php" class="card-button btn-danger">Logout</a>
       </div>
     </div>
@@ -142,20 +142,20 @@ $user_id = $_SESSION['user_id'];
     <div class="admin-actions-grid">
       <div class="dashboard-card">
         <span class="card-icon">🎟️</span>
-        <h3 class="card-title">Browse Events</h3>
-        <p class="card-description">Discover and purchase tickets for upcoming events.</p>
+        <h3 class="card-title" style="color: white;">Browse Events</h3>
+        <p class="card-description" style="color: #cccccc;">Discover and purchase tickets for upcoming events.</p>
         <a href="events.php" class="card-button btn-primary">View Events</a>
       </div>
       <div class="dashboard-card">
         <span class="card-icon">📋</span>
-        <h3 class="card-title">My Tickets</h3>
-        <p class="card-description">View and manage your purchased tickets.</p>
+        <h3 class="card-title" style="color: white;">My Tickets</h3>
+        <p class="card-description" style="color: #cccccc;">View and manage your purchased tickets.</p>
         <a href="my_events.php" class="card-button btn-success">View Tickets</a>
       </div>
       <div class="dashboard-card">
         <span class="card-icon">🚪</span>
-        <h3 class="card-title">Logout</h3>
-        <p class="card-description">Sign out of your account securely.</p>
+        <h3 class="card-title" style="color: white;">Logout</h3>
+        <p class="card-description" style="color: #cccccc;">Sign out of your account securely.</p>
         <a href="logout.php" class="card-button btn-danger">Logout</a>
       </div>
     </div>
@@ -172,11 +172,11 @@ $user_id = $_SESSION['user_id'];
         <p style="margin-bottom: 15px; font-size: 12px;">Coming Soon</p>
         <div class="app-buttons">
           <a href="#" class="app-btn" onclick="return false;">
-            <span class="app-btn-icon">🍎</span>
+            <!-- <span class="app-btn-icon">🍎</span> -->
             <span>App Store</span>
           </a>
           <a href="#" class="app-btn" onclick="return false;">
-            <span class="app-btn-icon">▶️</span>
+            <!-- <span class="app-btn-icon">▶️</span> -->
             <span>Google Play</span>
           </a>
         </div>

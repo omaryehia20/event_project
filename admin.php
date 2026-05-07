@@ -23,7 +23,7 @@ $result = $conn->query("SELECT * FROM events WHERE status='pending'");
 <body>
 
 <header class="header-bar">
-    <img src="images/logofinal.png" alt="Evently Logo" class="logo">
+    <img style="width: 370px; height: 160px;" src="images/eventlyLogo.png" alt="Evently Logo" class="logo">
 </header>
 
 <div class="admin-container">

@@ -48,11 +48,11 @@ $events = $result->fetch_all(MYSQLI_ASSOC);
         <p style="margin-bottom: 15px; font-size: 12px;">Coming Soon</p>
         <div class="app-buttons">
           <a href="#" class="app-btn" onclick="return false;">
-            <span class="app-btn-icon">🍎</span>
+            <!-- <span class="app-btn-icon">🍎</span> -->
             <span>App Store</span>
           </a>
           <a href="#" class="app-btn" onclick="return false;">
-            <span class="app-btn-icon">▶️</span>
+            <!-- <span class="app-btn-icon">▶️</span> -->
             <span>Google Play</span>
           </a>
         </div>

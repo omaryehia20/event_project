@@ -11,9 +11,10 @@ $sql = "INSERT INTO users (username, email, password, role)
 VALUES ('$username','$email','$password','$role')";
 
 if ($conn->query($sql) ===TRUE) {
-    // echo "Registered successfully!";
+    // $_SESSION['role'] = $role;
+    // $_SESSION['username'] = $username;
+    $_SESSION['user_id'] = $conn->insert_id;
     $_SESSION['role'] = $role;
-    $_SESSION['username'] = $username;
 
     header("Location: dashboard.php");
     exit();
