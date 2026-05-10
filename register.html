@@ -16,7 +16,7 @@
     <img  style="width: 370px; height: 160px;" src="images/eventlyLogo.png" alt="Evently Logo" class="logo">
   </header>
 
-
+<div id="error-message" class="error-box"></div>
 
   <form class="form-box" action="register.php" method="POST">
     <input type="text" name="username" placeholder="Username" required><br>
@@ -42,11 +42,9 @@
           <p style="margin-bottom: 15px; font-size: 12px;">Coming Soon</p>
           <div class="app-buttons">
             <a href="#" class="app-btn" onclick="return false;">
-              <!-- <span class="app-btn-icon">🍎</span> -->
               <span>App Store</span>
             </a>
             <a href="#" class="app-btn" onclick="return false;">
-              <!-- <span class="app-btn-icon">▶️</span> -->
               <span>Google Play</span>
             </a>
           </div>
@@ -91,6 +89,20 @@
       </div>
     </div>
   </footer>
+
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+if (params.get("error") === "email_exists") {
+
+    const errorBox = document.getElementById("error-message");
+
+    errorBox.style.display = "block";
+
+    errorBox.innerHTML = "⚠ This email is already registered!";
+}
+</script>
 
 </body>
 

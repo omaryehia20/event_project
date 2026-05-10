@@ -30,7 +30,6 @@ $user = $user_result->fetch_assoc();
 ?>
 
 <!DOCTYPE html>
-<html>
 <head>
   <meta charset="utf8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -15,12 +15,6 @@ if ($user && password_verify($password, $user['password'])) {
 
      header("Location: dashboard.php");
 
-    // if ($user['role'] == 'user') {
-    //     header("Location: dashboard.php");
-    // } else {
-    //     header("Location: dashboard.php");
-    // }
-
 } else {
 
     header("Location: login.html?error=1");

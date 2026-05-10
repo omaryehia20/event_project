@@ -10,7 +10,6 @@ if ($_SESSION['role'] != 'admin') {
 if (isset($_GET['delete_id'])) {
     $delete_id = $_GET['delete_id'];
     
-    // Verify user exists and delete
     $delete_result = $conn->query("DELETE FROM users WHERE id='$delete_id' AND role!='admin'");
     
     if ($delete_result) {
@@ -36,7 +35,7 @@ $users_result = $conn->query("SELECT * FROM users WHERE role IN ('user', 'organi
 <body>
 
 <header class="header-bar">
-    <img src="images/logofinal.png" alt="Evently Logo" class="logo">
+    <img style="width: 370px; height: 160px;" src="images/eventlyLogo.png" alt="Evently Logo" class="logo">
 </header>
 
 <div class="manage-container">
@@ -66,7 +65,7 @@ $users_result = $conn->query("SELECT * FROM users WHERE role IN ('user', 'organi
           <?php while ($row = $users_result->fetch_assoc()) { ?>
             <tr>
               <td><?php echo htmlspecialchars($row['id']); ?></td>
-              <td><?php echo htmlspecialchars($row['name']); ?></td>
+              <td><?php echo htmlspecialchars($row['username']); ?></td>
               <td><?php echo htmlspecialchars($row['email']); ?></td>
               <td>
                 <span class="role-badge role-<?php echo strtolower($row['role']); ?>">

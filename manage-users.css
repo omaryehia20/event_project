@@ -26,9 +26,9 @@
 }
 
 .success-message {
-  background: rgba(27, 148, 78, 0.2);
+  background: rgb(0, 69, 0);
   border: 1px solid #1b944e;
-  color: #1b944e;
+  color: #1ed66a;
   padding: 15px 20px;
   border-radius: 8px;
   margin-bottom: 30px;
@@ -37,7 +37,7 @@
 }
 
 .users-table-wrapper {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -53,7 +53,7 @@
 }
 
 .users-table thead {
-  background: linear-gradient(135deg, #0358b4 0%, #025fa3 100%);
+  background: rgba(2, 63, 129, 0.8);
 }
 
 .users-table th {
@@ -69,7 +69,7 @@
 .users-table td {
   padding: 18px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: #333;
+  color: white;
   font-size: 14px;
 }
 
@@ -92,13 +92,13 @@
 }
 
 .role-user {
-  background: rgba(3, 88, 180, 0.2);
-  color: #0358b4;
+  background: rgba(2, 122, 249, 0.2);
+  color: #0466ce;
 }
 
 .role-organizer {
-  background: rgba(155, 89, 182, 0.2);
-  color: #9b59b6;
+  background: rgba(218, 125, 255, 0.2);
+  color: #b367d1;
 }
 
 .delete-btn {
